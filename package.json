@@ -4,7 +4,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "start:rspack": "rspack start",
+    "start:rspack": "rspack serve",
     "build:rspack": "rspack build",
     "test": "react-scripts test"
   },

@@ -9,16 +9,16 @@ const config = {
   builtins: {
     html: [
       {
-        template: './index.html',
+        template: './public/index.html',
       },
     ],
-    copy: {
-      patterns: [
-        {
-          from: 'public',
-        },
-      ],
-    },
+    // copy: {
+    //   patterns: [
+    //     {
+    //       from: 'public',
+    //     },
+    //   ],
+    // },
   },
   module: {
     rules: [
@@ -36,11 +36,11 @@ const config = {
     ],
   },
   devServer: {
-    static: {
-      directory: path.join(__dirname, 'public'),
-    },
+    // static: {
+    //   directory: path.join(__dirname, 'public'),
+    // },
     compress: true,
-    port: 3000,
+    port: 3001,
   },
   devtool: process.env.NODE_ENV === 'development' ? 'source-map' : false,
 };
